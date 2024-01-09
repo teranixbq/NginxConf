@@ -1,0 +1,2 @@
+# NginxConf
+Catatan konfigurasi
