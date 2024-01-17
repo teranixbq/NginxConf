@@ -62,3 +62,5 @@ Contoh : `append name " Jon"`
 - `keys <pattern>`, menampilkan semua key yang ada di database, bisa menggunakan wildcard `*` untuk menampilkan semua key.<br/>
 Contoh : `keys *`
 
+https://github.com/teranixbq/NoteConf/assets/66883583/08fc5c7c-a5ab-4074-aad3-329104ff2bec
+
