@@ -107,3 +107,20 @@ demo :
 
 ![](/Redis/asset/basic/expiration.gif)
 
+## Operasi Increment dan Decrement
+
+- `incr <key>`, menambahkan value dari key dengan 1.<br/>
+Contoh : `incr cart`
+
+- `incrby <key> <increment>`, menambahkan value dari key dengan nilai tertentu.<br/>
+Contoh : `incrby cart 5`
+
+- `decr <key>`, mengurangi value dari key dengan 1.<br/>
+Contoh : `decr cart`
+
+- `decrby <key> <decrement>`, mengurangi value dari key dengan nilai tertentu.<br/>
+Contoh : `decrby cart 5`
+
+demo :
+
+![](/Redis/asset/basic/incrdecr.gif)
