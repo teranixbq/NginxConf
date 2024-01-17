@@ -124,3 +124,40 @@ Contoh : `decrby cart 5`
 demo :
 
 ![](/Redis/asset/basic/incrdecr.gif)
+
+## Operasi Flush
+
+- `flushdb`, menghapus semua key dari database yang sedang aktif.<br/>
+
+- `flushall`, menghapus semua key dari semua database.<br/>
+
+## Bulk Pipeline
+
+Bulk pipline digunakan ketika ingin melakukan beberapa operasi Redis sekaligus, kita dapat menggunakan cara ini untuk mengurangi latensi dan mempercepat eksekusi perintah.
+
+```
+redis-cli -h <host> -p <port> -n <index database> --pipe < <path file>
+```
+`<host>` : host redis yang digunakan<br/>
+`<port>` : port redis yang digunakan<br/>
+`<index database>` : index database yang digunakan<br/>
+`<path file>` : path file yang berisi perintah redis yang akan dijalankan<br/>
+
+contoh :
+
+```
+redis-cli -h localhost -p 6379 -n 0 --pipe < config/bulk.txt
+```
+Didalam bulk.txt terdapat perintah redis yang akan dijalankan secara berurutan. lihat contoh dibawah ini.
+
+```
+set name "Hanief FBA"
+set age 17
+set address "Jakarta"
+set gender "Laki-laki"
+```
+result :
+
+![](/Redis/asset/basic/bulk.png)
+
+disana ada `replies : 4`, yang artinya ada 4 perintah didalam bulk.txt berhasil dijalankan.

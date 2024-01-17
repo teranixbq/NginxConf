@@ -1,0 +1,4 @@
+set name "Hanief FBA"
+set age 17
+set address "Jakarta"
+set gender "Laki-laki"
