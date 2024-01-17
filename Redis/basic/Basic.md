@@ -18,7 +18,7 @@ redis-server config/redis.conf
 
 Tampilan
 
-<img src="https://github.com/teranixbq/NoteConf/blob/722d66002dfc594fca84fc3869b46a54c61a9083/Redis/asset/basic/view-start.png" alt="Versi Redis" style="width:800px;height:400px;">
+<img src="/Redis/asset/basic/view-start.png" style="width:800px;height:400px;">
 
 artinya database redis sudah bisa digunakan. untuk memulai koneksi di lokal buat tab terminal baru untuk melakukan koneksi ke redis.
 
