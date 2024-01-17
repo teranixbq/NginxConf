@@ -62,12 +62,29 @@ Contoh : `append name " Jon"`
 - `keys <pattern>`, menampilkan semua key yang ada di database, bisa menggunakan wildcard `*` untuk menampilkan semua key.<br/>
 Contoh : `keys *`
 
+demo : 
+
 https://github.com/teranixbq/NoteConf/assets/66883583/08fc5c7c-a5ab-4074-aad3-329104ff2bec
 
+## Operasi String Range
 - `setrange <key> <offset> "<value>"`, mengganti value dari key pada posisi tertentu.<br/>
 Contoh : `setrange name 7 "Jon"`
 
 - `getrange <key> <start> <end>`, mengambil value dari key pada posisi tertentu.<br/>
 Contoh : `getrange name 0 8` <br/>
 
+demo : 
+
 ![](/Redis/asset/basic/stringrange.gif)
+
+## Operasi Multiple Key
+
+- `mset <key> "<value>" [key ...]`, menetapkan value untuk beberapa key.<br/>
+Contoh : `mset name "Daniel" age 20`
+
+- `mget <key> [key ...]`, mendapatkan value dari beberapa key.<br/>
+Contoh : `mget name age`
+
+demo : 
+
+![](/Redis/asset/basic/multiplekey.gif)
