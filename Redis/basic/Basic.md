@@ -88,3 +88,22 @@ Contoh : `mget name age`
 demo : 
 
 ![](/Redis/asset/basic/multiplekey.gif)
+
+## Operasi Expiration
+
+- `expire <key> <seconds>`, menetapkan waktu expired untuk key tertentu.<br/>
+Contoh : `expire name 10`
+
+- `setex <key> <seconds> "<value>"`, menetapkan waktu expired dan value untuk key tertentu.<br/>
+Contoh : `setex name 10 "Daniel"`
+
+- `ttl <key>`, menampilkan sisa waktu expired dari key.<br/>
+Contoh : `ttl name`
+
+- `persist <key>`, menghapus waktu expired dari key.<br/>
+Contoh : `persist name`
+
+demo :
+
+![](/Redis/asset/basic/expiration.gif)
+
