@@ -42,7 +42,7 @@ lihat :
 ![](/Redis/asset/basic/selectdb.png)
 
 
-## Operasi
+## Operasi String
 
 - `set <key> "<value>"`, untuk menetapkan nilai untuk suatu key tertentu.<br/>
 Contoh : `set name "Daniel"`
@@ -64,3 +64,10 @@ Contoh : `keys *`
 
 https://github.com/teranixbq/NoteConf/assets/66883583/08fc5c7c-a5ab-4074-aad3-329104ff2bec
 
+- `setrange <key> <offset> "<value>"`, mengganti value dari key pada posisi tertentu.<br/>
+Contoh : `setrange name 7 "Jon"`
+
+- `getrange <key> <start> <end>`, mengambil value dari key pada posisi tertentu.<br/>
+Contoh : `getrange name 0 8` <br/>
+
+![](/Redis/asset/basic/stringrange.gif)
